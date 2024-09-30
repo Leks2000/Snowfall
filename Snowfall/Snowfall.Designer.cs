@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Snowfall));
             this.SuspendLayout();
             // 
             // Snowfall
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            resources.ApplyResources(this, "$this");
             this.Name = "Snowfall";
-            this.Text = "Snowfall";
             this.ResumeLayout(false);
 
         }
