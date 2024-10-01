@@ -34,8 +34,12 @@
             // Snowfall
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackgroundImage = global::Snowfall.Properties.Resources.background_with_snow;
             resources.ApplyResources(this, "$this");
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Snowfall";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.ResumeLayout(false);
 
         }

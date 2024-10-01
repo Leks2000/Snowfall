@@ -1,21 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Snowfall
 {
     public partial class Snowfall : Form
     {
-        private const int SnowflakeCount = 10;
+        private const int SnowflakeCount = 100;
         private Timer timer;
         private SnowFlake[] snowflakes;
-        private Image backGroundImage = Properties.Resources.background_with_snow;
         private Image snowflakeImage = Properties.Resources.snowflake;
 
         public Snowfall()
@@ -55,7 +48,6 @@ namespace Snowfall
         {
             base.OnPaint(e);
             Graphics g = e.Graphics;
-            g.DrawImage(backGroundImage, 0, 0);
 
             foreach (var snowflake in snowflakes)
             {

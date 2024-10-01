@@ -86,10 +86,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Source\Image\background_with_snow.png" />
-    <Content Include="Source\Image\snowflake.png" />
+    <None Include="Resources\background-with-snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snowflake.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
