@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Snowfall));
             this.SuspendLayout();
             // 
             // Snowfall
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackgroundImage = global::Snowfall.Properties.Resources.background_with_snow;
+            resources.ApplyResources(this, "$this");
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Snowfall";
-            this.Text = "Snowfall";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.ResumeLayout(false);
 
         }
